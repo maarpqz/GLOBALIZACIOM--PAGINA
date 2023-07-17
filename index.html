@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="media/logo.png" alt="Company Logo" width="30" height="30">
+      <span>Grupo Arce</span>
+    </div>
+    <div class="navbar-links-container">
+      <ul class="navbar-links">
+        <li><a href="#calculadora">Calculadora</a></li>
+        <li><a href="video.html">Video introductorio</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="media/deldia.png" alt="Company Logo">
+    <h2>Calculadora de <br/><span>gastos</span></h2>
+    <P>Aquí encontrarás una herramienta sencilla y práctica que te permitirá calcular la cantidad exacta de metros de plástico utilizados en los lotes <br> de productos de embutidos de la empresa "Del Día". Además, podrás obtener el costo correspondiente del material empleado en cada lote. </P>
+    <div class="d-grid gap-2 d-md-block">
+      <button class="btn btn-primary" type="button" id="btninicio" onclick="scrollToDiv()">Iniciar calculadora</button>
+      <button class="btn btn-primary" type="button" id="btnvideo" onclick="irAPaginaVideo()">
+        <i class="bi bi-play-fill" style="font-size: 1rem" onclick="irAPaginaVideo()"></i>
+      </button>
+    </div>
+  </div>
+
+  
+    <div class="card custom-card" id="inst">
+      <div class="card-body">
+        <i class="bi bi-lightbulb"></i>
+        instrucciones: para poder utilizar efectivamente esta calculadora unicamente se requiere seleccionar el codigo del producto e ingresar la cantidad de productos. De esta forma podra obtener la cantidad de metros de plastico utilizados en el lote y el costo del material.
+      </div>
+    </div>
+ 
+      <div class="card custom-card" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+        <div class="card-header" id="calculadora">
+          Calculadora
+        </div>
+        <div class="card-body">
+          <P>Selecciona el codigo de producto</P>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Codigo de producto</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>seleccione el codigo</option>
+          <option value="807">807</option>
+          <option value="943">943</option>
+          <option value="944">944</option>
+          <option value="945">945</option>
+          <option value="765">765</option>
+          <option value="776">776</option>
+          <option value="800">800</option>
+          <option value="806">806</option>
+          <option value="801">801</option>
+          <option value="818">818</option>
+          <option value="819">819</option>
+          <option value="908">908</option>
+          <option value="909">909</option>
+          <option value="910">910</option>
+          <option value="911">911</option>
+        </select>
+      </div>
+      <P>Ingrese la cantidad</P>
+      <div class="input-group input-group-md">
+        <span class="input-group-text" id="inputGroup-sizing-md">Cantidad</span>
+        <input type="text" class="form-control" id="inputCantidad" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <p id="resultado"></p>
+        <button type="button" class="btn btn-secondary" id="btnCalcular">Calcular</button>
+        <button type="button" class="btn btn-secondary" id="btnBorrar">Borrar datos</button>
+        </div>
+      </div>
+      
+  
+  
+  <footer>
+    <hr>
+    <div class="text-center p-3">
+     Universidad Tecnológica de Panamá <br> Pagina web realizada por: Maria Paz, Daniel Perez, Maria Madrid, Juan Zhu, Reynaldo Zorrilla.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
